@@ -1,6 +1,7 @@
-const concat = requre('./concat');
+const concat = require('./concat');
 
-test('<テストで確かめること>', () => {
-    // expect, toEqual を使って、適切なテストを作ってください。
-    // 配列の比較にtoBeは使えないことに注意してください。
+test('配列の要素を順番に取り出す', () => {
+    const array1 = ['a','c'];
+    const array2 = ['b','d']
+    expect(concat(array1,array2)).toEqual(['a','b','c','d'])
 });

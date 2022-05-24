@@ -6,7 +6,11 @@
  * @returns any[] 交互に要素を取り結合した配列
  */
 function concat(arrayA, arrayB) {
-    return []
+    let arrayC = [];
+    for(let i=0; i < arrayA.length; i++){
+        arrayC.push(arrayA[i],arrayB[i]);
+    }
+    return arrayC
 }
 
 module.exports = concat;
