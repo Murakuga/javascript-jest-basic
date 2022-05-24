@@ -1,5 +1,5 @@
 const reverse = require('./reverse');
 
-test('1から10を合計したら55', () => {
-    expect(reverse('gnirts')).toBe('string');
+test('与えられた文字列を反対にする', () => {
+     expect(reverse('gnirts')).toBe('string');
 });
