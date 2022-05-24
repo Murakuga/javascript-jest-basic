@@ -1,6 +1,9 @@
-const unique = requre('./unique');
+const {count,dict} = require('./unique');
 
 test('<テストで確かめること>', () => {
-    // expect, toEqual を使って、適切なテストを作ってください。
-    // 配列の比較にtoBeは使えないことに注意してください。
+    expect(count(1, 1, 2, 3)).toEqual([1, 2, 3])
+});
+
+test('<テストで確かめること>', () => {
+    expect(dict(1, 1, 2, 3)).toEqual({"1":2, "2":1, "3":1})
 });
