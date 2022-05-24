@@ -4,7 +4,7 @@
  * @returns {number} 最も小さな数字
  */
 function min(...args) {
-    return -1;    
+    return Math.min(...args);    
 }
 
 module.exports = min;
